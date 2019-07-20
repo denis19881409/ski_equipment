@@ -1,0 +1,557 @@
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+/*header*/
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+}
+
+.header-address {
+    width: 400px;
+    height: 30px;
+    float: right;
+    padding: 10px;
+    margin-right: 45px;
+    text-align: right;
+}
+
+/******/
+
+/*social*/
+.social {
+    width: 390px;
+    height: 55px;
+    float: left;
+    display: flex;
+}
+
+.social a {
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 46px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+.twitter a:hover {
+    background: #00acee;
+    color: #fff;
+}
+
+.youtube a:hover {
+    background: #c4302b;
+    color: #fff;
+}
+
+.instagram a:hover {
+    background: #3f729b;
+    color: #fff;
+}
+
+.facebook a:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.skype a:hover {
+    background: #00aff0;
+    color: #fff;
+}
+
+.telegram a:hover {
+    background: #249bd7;
+    color: #fff;
+}
+
+.whatsapp a:hover {
+    background: #50b154;
+    color: #fff;
+}
+
+/******/
+
+/*links*/
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 15px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.links-effect a {
+    line-height: 1.5em;
+    perspective: 800px;
+}
+
+.links-effect a span {
+    position: relative;
+    display: inline-block;
+    padding: 3px 15px 0;
+    background: #587285;
+    box-shadow: inset 0 3px #2f4351;
+    transition: background 0.6s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+}
+
+.links-effect a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2797C0;
+    color: white;
+    content: attr(data-hover);
+    transform: rotateX(270deg);
+    transition: transform 0.6s;
+    transform-origin: 0 0;
+    pointer-events: none;
+    padding: 3px 15px 0;
+}
+
+.links-effect a:hover span,
+.links-effect a:focus span {
+    background: #2f4351;
+}
+
+.links-effect a:hover span::before,
+.links-effect a:focus span::before {
+    transform: rotateX(10deg);
+}
+
+/***/
+.Search {
+    width: 100%;
+    height: 50px;
+    padding-right: 55px;
+}
+
+.form-inline {
+    float: right;
+}
+
+/*jumbotron*/
+.jumbotron {
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Drawn_wallpapers_Climber_in_the_mountains_025593_.jpg);
+    background-size: 100%;
+    text-align: right;
+    padding: 150px 100px 0px 0px;
+}
+
+.jmb-text-top {
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+}
+
+.jmb-text-middle {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.button-jumbotron {
+    width: 400px;
+    height: 100px;
+    background-color: #7DBCDA;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    outline: none;
+    transition: .2s linear;
+}
+
+.button-jumbotron:hover {
+    box-shadow: 400px 0 0 0 rgba(0, 0, 0, 0.3) inset;
+    color: black;
+}
+
+/******/
+
+/*icons*/
+.small-icons-text {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-right: 60px;
+}
+
+.small-icons-text p {
+    font-size: 18px;
+}
+
+.big-icons-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.big-icons-text p {
+    font-size: 18px;
+}
+
+.icon-text-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.icon-images {
+    opacity: 1;
+}
+
+.icon-images:hover {
+    opacity: 0.5;
+}
+
+#myicon .far {
+    opacity: 1;
+}
+
+#myicon .far:hover {
+    opacity: 0.5;
+}
+
+#myicon .fas {
+    opacity: 1;
+}
+
+#myicon .fas:hover {
+    opacity: 0.5;
+}
+
+#myicon .fas {
+    opacity: 1;
+}
+
+#myicon .fas:hover {
+    opacity: 0.5;
+}
+
+#myicon .fa {
+    opacity: 1;
+}
+
+#myicon .fa:hover {
+    opacity: 0.5;
+}
+
+/*Про компанію*/
+
+.content {
+    width: 100%;
+    height: 400px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.content-image {
+    float: left;
+    padding: 0px 40px 0px 0px;
+}
+
+.content-image1 {
+    float: right;
+    padding: 0px 0px 0px 40px;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+.content-text1 {
+    text-align: justify;
+}
+
+#content-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.content-title-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*Паралакс*/
+.fon {
+    width: 100%;
+    height: 800px;
+    background-image: url(images/orig.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0px 150px 0px;
+}
+
+/*Продукція*/
+/*Загальні стилі*/
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 2px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff no-repeat center center;
+}
+
+.view .mask,
+.view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+
+.view p {
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 25px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+/*эфект відскоку при опусканні элементів описання зверху*/
+.view-eighth .mask {
+    background-color: rgba(255, 255, 255, 0.7);
+    top: -200px;
+    opacity: 0;
+    transition: all 0.3s ease-out 0.5s;
+}
+
+.view-eighth h2 {
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+
+.view-eighth p {
+    color: #333;
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.view-eighth a.info {
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.3s;
+}
+
+/*анімація до элементу mask і оприділяємо затримку для елементів опису*/
+.view-eighth:hover .mask {
+    opacity: 1;
+    top: 0px;
+    transition-delay: 0s;
+    animation: bounceY 0.9s linear;
+}
+
+.view-eighth:hover h2 {
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+
+.view-eighth:hover p {
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+.view-eighth:hover a.info {
+    transform: translateY(0px);
+    transition-delay: 0s;
+}
+
+/*Для створення ефекту відскоку використовується функція translateY і кілька фреймів*/
+@keyframes bounceY {
+    0% {
+        transform: translateY(-205px);
+    }
+
+    40% {
+        transform: translateY(-100px);
+    }
+
+    65% {
+        transform: translateY(-52px);
+    }
+
+    82% {
+        transform: translateY(-25px);
+    }
+
+    92% {
+        transform: translateY(-12px);
+    }
+
+    55%,
+    75%,
+    87%,
+    97%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.products {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    padding-left: 70px;
+}
+
+#title-products {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.title-assortment {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Відгуки*/
+.card-deck {
+    margin-top: 50px;
+}
+
+.card {
+    padding: 10px;
+}
+
+#title-reviews {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+/*Оплата*/
+.content-title-payment {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+/*letter*/
+.letter {
+    width: 100%;
+    padding: 50px;
+    border: 1px solid #7DBCDA;
+    margin-bottom: 50px;
+}
+
+.title-letter {
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#footer-address {
+    text-align: right;
+}
